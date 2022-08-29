@@ -53,14 +53,12 @@ p {
     .layout-shifter {
         display: grid;
         grid-template-areas: "contenido" 
-                             "sidebar";
+                             "inferior";
     }
-}
+
 
 .sidebar {
-    grid-area:sidebar;
-
-    
+    grid-area: inferior;   
 }
 
 .contenido-principal {
@@ -71,17 +69,16 @@ p {
     column-gap: 3rem;
 }
 
+}
+
 @media (min-width:992px) {
     .layout-shifter {
         grid-template-areas: "contenido sidebar";
         column-gap: 2rem;
-
     }
-}
 
 .sidebar {
-    grid-area: sidebar;
-   
+    grid-area: sidebar;   
 }
 
 .contenido-principal {
@@ -90,3 +87,4 @@ p {
                          "entrada2";
     grid-template-columns: unset;
     }
+}
